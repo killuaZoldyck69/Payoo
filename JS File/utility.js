@@ -1,6 +1,8 @@
 // cash out button
 getEleID("cash-out-btn").addEventListener("click", function (event) {
-  event.preventDefault();
+  //   event.preventDefault();
+
+  showButton("input-form");
 
   getEleID("amount-title").innerText = "Cash Out";
   getEleID("transactional-btn").innerText = "Cash Out";
@@ -8,10 +10,18 @@ getEleID("cash-out-btn").addEventListener("click", function (event) {
 
 // Add money button
 getEleID("add-money-btn").addEventListener("click", function (event) {
-  event.preventDefault();
+  //   event.preventDefault();
+
+  showButton("input-form");
 
   getEleID("amount-title").innerText = "Add Money";
   getEleID("transactional-btn").innerText = "Add Money";
+});
+
+// transction history
+getEleID("transaction").addEventListener("click", function () {
+  console.log("yo");
+  showButton("transaction-history");
 });
 
 getEleID("transactional-btn").addEventListener("click", function (event) {
