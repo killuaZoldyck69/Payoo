@@ -23,7 +23,7 @@
             <!-- avaiable balance -->
             <div class="stats shadow">
               <div class="stat">
-                <div class="stat-value">9400</div>
+                <div id="current-balance" class="stat-value">9400</div>
                 <div class="stat-desc">Available Balance</div>
               </div>
             </div>
@@ -33,10 +33,10 @@
 
             <div>
               <!-- add money button  -->
-              <button class="btn btn-lg">Add Money</button>
+              <button id="add-money-btn" class="btn btn-lg">Add Money</button>
 
               <!-- Cash out button  -->
-              <button class="btn btn-lg">Cash Out</button>
+              <button id="cash-out-btn" class="btn btn-lg">Cash Out</button>
             </div>
 
             <!-- divider -->
@@ -47,7 +47,7 @@
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Amount</span>
+                    <span id="amount-title" class="label-text">Add Money</span>
                   </label>
                   <input
                     id="amount"
@@ -70,7 +70,9 @@
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add Money</button>
+                  <button id="transactional-btn" class="btn btn-primary">
+                    Add Money
+                  </button>
                 </div>
               </form>
             </div>
@@ -78,5 +80,9 @@
         </div>
       </div>
     </div>
+
+    <!-- js files -->
+    <script src="JS File/common-function.js"></script>
+    <script src="JS File/utility.js"></script>
   </body>
 </html>
